@@ -1,0 +1,57 @@
+/********************* Global Layout ***********************/
+
+* {
+ box-sizing: border-box;   
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background: #f2f2f2;    
+    
+}
+
+.main-header,
+.footer {
+    background: #f2f2f2;    
+   
+}
+
+.header-info {
+    margin: 40px;
+}
+
+.header-info img {
+ width: 80%;
+}
+
+.header-info p {
+ padding: 15px auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 2em;
+    
+}
+
+
+
+.navigation ul {
+    
+    list-style-type: none;
+   text-transform: uppercase;
+    margin: 0 7px;
+    padding: 0;
+}
+
+.navigation li {
+    background: #FFF;
+    margin: 4px;
+    padding: 7px 5px;
+}
+.navigation a {
+    text-decoration: none;
+    color: black;
+    font: bold;
+    font-size: 1.5em;
+}
