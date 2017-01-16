@@ -13,6 +13,7 @@ body {
     
 }
 
+
 .main-header,
 .footer {
     background: #f2f2f2;   
@@ -37,14 +38,14 @@ body {
   list-style-type: none;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
  
 }
 
 .navigation li {
     background: #FFF;   
-    margin: 5px 20px 5px 20px; 
+    margin: 5px 30px 8px 30px; 
     padding: 0;  
     text-align: center;
    
@@ -84,5 +85,43 @@ body {
 #contact p {
     margin: 60px 30px;
     padding: 20px;
+    
+}
+
+.clear-fix {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+@media (min-width: 760px) {
+    
+    body,  
+    .main-header {
+        background: white;
+    }
+   
+    .main-header h2 {
+        margin: 20px 40px;             
+    }
+    
+    .main-header h2 {
+        float: left;       
+    }
+    .main-header ul {
+        float: right;
+    }
+    .main-header li {
+        display:  inline-block;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 15px;       
+    }
+    
+    .header-info p {
+        float: left;
+    }
+    
+   
     
 }
