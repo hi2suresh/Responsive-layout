@@ -2,62 +2,106 @@
 
 * {
     box-sizing: border-box;
+     margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;     
+   
 }
 
+/*
 body {
     margin: 0;
     padding: 0;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;     
+    background: gray;
 }
+*/
 
+/*********************Navigation Layout ***********************/
 
 .main-header,
 .footer {
-    background: #f2f2f2;
-}
-
-.header-info {
-    margin: 40px;
-}
-
-.header-info img {
-    width: 80%;
-}
-
-.header-info p {
-    padding: 15px auto;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.2em;
+    padding-top: 40px;
+    background: lightgray;
 }
 
 .navigation ul {
     list-style-type: none;
     text-transform: uppercase;
     text-align: center;
-    margin: 0;
-    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%
 }
 
+
+.navigation li,
+.navigation a {   
+    background: white; 
+    margin: 8px auto;
+}
+
+.navigation li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+
+/*
+.header-info {
+    margin: 20px auto;
+}
+*/
+
+.header-info img {
+    width: 65%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.header-info p {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+}
+
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+/*********************Portfolio Layout ***********************/
+
+
+/*
 .navigation li {
     background: #FFF;
     margin: 5px 30px 8px 30px;
     padding: 0;
     text-align: center;
 }
+*/
 
-.navigation a {
-    text-decoration: none;
-    color: black;
-    font: bold;
-    font-size: 1.5em;
+#portfolio h2, 
+#portfolio div,
+#portfolio p{
+    background-color: white;
+}
+
+#portfolio {
+    margin-top: 20px;
+    margin-bottom: 20px;  
 }
 
 .figures img,
 .figures p {
-    width: 90%;
-    margin: 40px 10px;
+    width: 80%;    
     padding: 10px 15px;
 }
 
