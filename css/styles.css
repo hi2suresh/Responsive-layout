@@ -1,13 +1,13 @@
-/********************* Global Layout ***********************/
+    /********************* Global Layout ***********************/
 
 * {
     box-sizing: border-box;
-     margin: 0;
+    margin: 0;
     padding: 0;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;     
-   
+    font-family: 'Open Sans', sans-serif;
 }
+
 
 /*
 body {
@@ -19,11 +19,12 @@ body {
 }
 */
 
+
 /*********************Navigation Layout ***********************/
 
 .main-header,
 .main-footer-mobile,
-.main-footer-desktop{    
+.main-footer-desktop {
     background: lightgray;
 }
 
@@ -40,17 +41,17 @@ body {
     width: 80%
 }
 
-
 .navigation li,
-.navigation a {   
-    background: white; 
+.navigation a {
+    background: white;
     margin: 8px auto;
 }
 
 .navigation li {
     padding-top: 10px;
-    padding-bottom: 10px;    
+    padding-bottom: 10px;
 }
+
 
 /*
 .header-info {
@@ -72,13 +73,13 @@ body {
     font-size: 1.2em;
 }
 
-
 .navigation a {
     text-decoration: none;
     color: black;
     font-weight: 500;
     font-size: 1.5em;
 }
+
 
 /*********************Portfolio Layout ***********************/
 
@@ -92,23 +93,24 @@ body {
 }
 */
 
-#portfolio h2, 
+#portfolio h2,
 #portfolio div,
-#portfolio p{
+#portfolio p {
     background-color: white;
 }
 
 #portfolio {
     margin-top: 20px;
-    margin-bottom: 20px;  
+    margin-bottom: 20px;
 }
 
 #portfolio h2 {
     padding-bottom: 20px;
 }
+
 .figures img,
 .figures p {
-    width: 80%;    
+    width: 80%;
     padding: 10px 20px;
 }
 
@@ -120,18 +122,18 @@ body {
     font-weight: bold;
 }
 
-#contact {    
+#contact {
     background: #ffd699;
     width: 100%;
 }
 
 #contact h2 {
-/*    margin: 80px 30px 60px 30px;*/
+    /*    margin: 80px 30px 60px 30px;*/
     padding: 30px;
 }
 
 #contact p {
-/*    margin: 60px 30px;*/
+    /*    margin: 60px 30px;*/
     padding: 15px;
 }
 
@@ -147,9 +149,10 @@ body {
 
 .main-footer-mobile {
     width: 100%;
-/*    margin: 20px auto;*/
+    /*    margin: 20px auto;*/
     padding: 30px 10px 40px 10px;
 }
+
 .main-footer-mobile h2 {
     float: left;
     font-size: 1em;
@@ -157,56 +160,111 @@ body {
 
 .main-footer-mobile a {
     text-decoration: none;
-    color:black;
+    color: black;
     float: right;
 }
 
+
+/****************Tablet settings***************************/
+
 @media (min-width: 760px) {
-    body,
     .main-header {
-        background: white;
-    }
-    
-    .main-header {
-        margin-bottom: 150px;
+        margin-bottom: 50px;
     }
     .main-header h2 {
-        margin: 20px 40px;
-        float: left;
+        margin: 20px auto;
     }
-    
     .navigation {
-        padding-bottom: 150px;
+        padding-bottom: 40px;
     }
-
-   
+    .navigation li,
+    .navigation a {
+        background: lightgray;
+        margin: 8px auto;
+    }
     .main-header li {
         display: inline-block;
-        margin-left: 20px;
-        margin-right: 20px;
         padding: 15px;
+    }
+    
+     .header-info div:nth-child(1) {
+            width: 40%;
+            float: right;
+        }
+    
+     .header-info div:nth-child(2) {
+            width: 60%;
+            float: right;
+        }
+    .header-info p {
+        padding-top: 10px;
+    }
+    
+    .header-info img {
+        width: 95%;
     }
     .figures {
         margin: 20px auto;
         width: 50%;
         float: left;
     }
-    
-  
     .header-info div {
         width: 50%;
         float: right;
     }
-    
-     .header-info div p {
-       font-size: 2em;
-       text-align: left;
+    .header-info div p {
+        /*       font-size: 1em;*/
+        text-align: left;
+    }
+    .main-footer-mobile {
+        display: none;
+    }
+    .main-footer-desktop {
+        display: block;
+    }
+}
+    /****************Desktop with mininum width of 1024 pixels***************************/
+    @media (min-width: 1024px) {
+        /*
+    body,
+    .main-header {
+        background: white;
     }
     
-    .main-footer-mobile {
-   display: none;
-}
-     .main-footer-desktop {
-    display: block;
-}
-}
+*/
+        .main-header {
+            margin-bottom: 150px;
+        }
+        .main-header h2 {
+            margin: 20px auto;
+            float: left;
+        }
+        .navigation {
+            padding-bottom: 150px;
+        }
+        .main-header li {
+            display: inline-block;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 15px;
+        }
+        .figures {
+            margin: 20px auto;
+            width: 50%;
+            float: left;
+        }
+        .header-info div {
+            width: 50%;
+            float: right;
+        }
+        .header-info div p {
+            font-size: 2em;
+            text-align: left;
+        }
+        .main-footer-mobile {
+            display: none;
+        }
+        .main-footer-desktop {
+            display: block;
+        }
+    }
