@@ -109,26 +109,7 @@ body {
         padding-bottom: 150px;
     }
 
-    .header-info {       
-        display: flex;
-        flex-direction: column-reverse;      
-    }
-
-    .header-info div {
-        width : 50%;
-        display: inline;
-    }
    
-
-    .header-info p {
-        display : inline;
-    }
-
-    
-    .header-info div:nthchild(2),
-    .main-header ul {
-        float: right;
-    }
     .main-header li {
         display: inline-block;
         margin-left: 20px;
@@ -139,5 +120,16 @@ body {
         margin: 20px auto;
         width: 50%;
         float: left;
+    }
+    
+  
+    .header-info div {
+        width: 50%;
+        float: right;
+    }
+    
+     .header-info div p {
+       font-size: 2em;
+       text-align: left;
     }
 }
