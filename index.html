@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header id="top" class="main-header">
+    <header id="top" class="main-header ">
         <h2>Suresh Govinda Rao</h2>
         <nav class="navigation">
             <ul>
@@ -18,12 +18,20 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="header-info"> <img src="images/responsive-layout-profile.png" alt="Avatar of Suresh Rao" />
-            <p>Hi! I am a front end developer who loves responsive webdesign and css. I've recently finished Treehouse course on CSS and excited to put my newly learnt skills to use!</p>
+<!--
+        <div class="header-info clear-fix"> 
+            <div class="header-image"><img src="images/responsive-layout-profile.png" alt="Avatar of Suresh Rao"/></div>
+            <div class="header-paragraph"><p>Hi! I am a front end developer who loves responsive webdesign and css. I've recently finished Treehouse course on CSS and excited to put my newly learnt skills to use!</p></div>
         </div>
+-->
+          <div class="header-info clear-fix"> 
+            <div><img src="images/responsive-layout-profile.png" alt="Avatar of Suresh Rao"/></div>
+            <div><p>Hi! I am a front end developer who loves responsive webdesign and css. I've recently finished Treehouse course on CSS and excited to put my newly learnt skills to use!</p></div>
+        </div>
+        
     </header>
     <main>
-        <div id="portfolio">
+        <div id="portfolio" class="clear-fix">
             <h2>Portfolio</h2>
             <div class="figures">
                 <figure> <img src="images/portfolio-1.png" alt="Marketing Page" align="middle"/>
@@ -68,7 +76,7 @@
             </div>
         </div>
         
-        <div id="contact">
+        <div id="contact" class="clear-fix">
         <h2>Contact</h2>
         <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you</p>
         <p>Phone +61 516-781-534</p>
