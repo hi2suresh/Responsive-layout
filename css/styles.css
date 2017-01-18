@@ -122,10 +122,10 @@ Portfolio Layout for Mobile
 /**************************** 
 Contact Layout  
 *****************************/
-#contact {
-    background: #ffd699;
+
+#contact {   
     width: 100%;
-    
+    background: #ffe0cc 
 }
 
 #contact h2 { 
@@ -146,12 +146,22 @@ Footer Layout for mobile
     display: none;   /** Make desktop footer disappear for mobile devices **/
 }
 
+#control-footer-background-color {
+     background: lightgray;
+}
 .main-footer-mobile{
-   width: 100%;
+   width: 98%;
+/*
+   margin-left: auto;
+   margin-right: auto;
+*/
    padding-top: 10px;
    padding-bottom: 10px;
+   border-top: 1px solid darkgray;
+/*
    background: lightgray;
    border-top: 1px solid gray;
+*/
   
 }
 .main-footer-mobile div{
@@ -163,11 +173,11 @@ Footer Layout for mobile
     float: left;    
     text-align: left;
     font-size: 0.7em;
-    padding-left: 15px;
+    padding-left: 7px;
 }
 
 .main-footer-mobile a{
-    padding-right: 15px;
+/*    padding-right: 15px;*/
     font-size: 0.7em;
 }
 
@@ -264,24 +274,30 @@ Footer Layout for Tablet
         display: none;
     }   
     
+    #control-footer-background-color {
+     background: gray;
+     margin-left: 15px;
+     margin-right: 15px;
+}
   
      .main-footer-desktop{
          display: block;
          font-size: 0.7em;
-         background: darkgray;
     }
     
 
     .footer-container div {
         width: 50%;
-        float: left;
+        float: left;       
         padding-top: 15px;
         padding-bottom: 40px;
+        border-top: 1px solid darkgray;  
     }
     
     .footer-heading h2{
         text-align: left;
-        padding-left: 20px;        
+/*        padding-left: 10px;*/
+
     }
     
     .footer-navigation li {
@@ -293,8 +309,8 @@ Footer Layout for Tablet
         .footer-navigation l, 
         .footer-navigation a{
             text-align: right;
-            text-transform: uppercase;
-            padding-right: 15px;
+            text-transform: uppercase;         
+            padding-left: 20px;
            
         }  
 
