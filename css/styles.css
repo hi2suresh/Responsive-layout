@@ -8,17 +8,11 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-
 /*
-body {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;     
-    background: gray;
+li:hover {
+    border: 1px solid blue;
 }
 */
-
 
 /*********************Navigation Layout ***********************/
 
@@ -30,6 +24,9 @@ body {
 
 .main-header {
     padding-top: 40px;
+}
+.container-heading {
+    padding-bottom: 20px;
 }
 
 .navigation ul {
@@ -69,11 +66,12 @@ body {
     width: 80%;
     margin: 0 auto;
     padding-bottom: 20px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', Georgia,  Helvetica, Verdana, Arial, sans-serif;
     font-size: 1.2em;
 }
 
-.navigation a {
+.navigation a,
+.footer-navigation{
     text-decoration: none;
     color: black;
     font-weight: 500;
@@ -83,15 +81,6 @@ body {
 
 /*********************Portfolio Layout ***********************/
 
-
-/*
-.navigation li {
-    background: #FFF;
-    margin: 5px 30px 8px 30px;
-    padding: 0;
-    text-align: center;
-}
-*/
 
 #portfolio h2,
 #portfolio div,
@@ -148,9 +137,8 @@ body {
 }
 
 .main-footer-mobile {
-    width: 100%;
-    /*    margin: 20px auto;*/
-    padding: 30px 10px 40px 10px;
+    width: 100%;   
+    padding: 20px 10px 40px 10px;
 }
 
 .main-footer-mobile h2 {
@@ -158,7 +146,8 @@ body {
     font-size: 1em;
 }
 
-.main-footer-mobile a {
+.main-footer-mobile a,
+.main-footer-desktop a{
     text-decoration: none;
     color: black;
     float: right;
@@ -169,40 +158,32 @@ body {
 
 @media (min-width: 760px) {
     .main-header {
-        margin-bottom: 50px;
+        margin-bottom: 40px;
     }
-    .main-header h2 {
-        margin: 20px auto;
+    
+    .navigation ul{      
+        width: 100%;
     }
-    .navigation {
-        padding-bottom: 40px;
-    }
+    
     .navigation li,
     .navigation a {
         background: lightgray;
-        margin: 8px auto;
+        margin: 0 auto 30px auto;
     }
+    
     .main-header li {
         display: inline-block;
-        padding: 15px;
+        padding-left: 20px;
     }
-    
-     .header-info div:nth-child(1) {
-            width: 40%;
-            float: right;
-        }
-    
-     .header-info div:nth-child(2) {
-            width: 60%;
-            float: right;
-        }
+
     .header-info p {
         padding-top: 10px;
     }
     
     .header-info img {
-        width: 95%;
+        width: 85%;
     }
+     
     .figures {
         margin: 20px auto;
         width: 50%;
@@ -212,27 +193,102 @@ body {
         width: 50%;
         float: right;
     }
-    .header-info div p {
-        /*       font-size: 1em;*/
+    .header-info div p {  
         text-align: left;
     }
+    
+    #contact p {
+    margin: 20px auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+  
     .main-footer-mobile {
         display: none;
     }
-    .main-footer-desktop {
+    
+    .main-footer-desktop{
+        background: red;
         display: block;
-    }
-}
-    /****************Desktop with mininum width of 1024 pixels***************************/
-    @media (min-width: 1024px) {
-        /*
-    body,
-    .main-header {
-        background: white;
+        margin: 20px auto;
+        font-size: 0.8em;
     }
     
-*/
-        .main-header {
+
+    .footer-heading,
+    .footer-navigation {
+        width: 50%;
+        float: left;        
+    }
+    
+    .footer-heading h2{
+        text-align: left;
+        padding-left: 20px;        
+    }
+
+    .footer-navigation li {
+        display: inline-block;       
+        list-style-type: none;
+        padding-left: 30px;
+        font-weight: bold;
+    }
+
+   
+}
+
+
+    /****************Desktop with mininum width of 1024 pixels***************************/
+    @media (min-width: 1024px) {
+        
+      /*Settings for top section of the page */
+        
+        .container-heading, 
+        .container-navigation {
+            width: 50%;
+            float: left;
+        }
+        
+        .container-heading h2 {
+           text-align: left;
+           padding-left: 60px;
+        }
+        
+        .container-navigation li {
+            display: inline;            
+            padding: 0;
+        }
+        
+        .container-navigation ul, 
+        .container-navigation l, 
+        .container-navigation a{
+            text-align: right;
+            padding-right: 30px;
+            font-size: 1em;
+            font-weight: bold;
+        }
+      
+        
+         /*******Settings for header information of the page**********/
+        .header-info{
+            padding-top: 40px;
+        }
+        
+         .header-info p{
+            font-size: 1.1em;
+            font-family: 'Nunito', sans-serif;         
+        }
+        
+         /*Settings for Portfolio section of the page */
+        
+        .figures {      
+        width: 33%;
+      
+    }
+        
+       /* .main-header {
             margin-bottom: 150px;
         }
         .main-header h2 {
@@ -266,5 +322,5 @@ body {
         }
         .main-footer-desktop {
             display: block;
-        }
+        }*/
     }
