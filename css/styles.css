@@ -210,8 +210,39 @@ li:hover {
         display: none;
     }
     
-    .main-footer-desktop{
-        background: red;
+    
+    /****** Make desktop footer visible *************/
+     .main-footer-desktop{
+         display: block;
+         font-size: 0.7em;
+    }
+    
+    .footer-container div {
+        width: 50%;
+        float: left;
+    }
+    
+    .footer-heading h2{
+        text-align: left;
+        padding-left: 20px;        
+    }
+    
+    .footer-navigation li {
+        display: inline-block;       
+        list-style-type: none;       
+    }
+    
+      .footer-navigation ul, 
+        .footer-navigation l, 
+        .footer-navigation a{
+            text-align: right;
+            text-transform: uppercase;
+            padding-right: 15px;         
+           
+        }
+      
+/*
+    .main-footer-desktop{      
         display: block;
         margin: 20px auto;
         font-size: 0.8em;
@@ -235,6 +266,7 @@ li:hover {
         padding-left: 30px;
         font-weight: bold;
     }
+*/
 
    
 }
@@ -284,43 +316,8 @@ li:hover {
          /*Settings for Portfolio section of the page */
         
         .figures {      
-        width: 33%;
-      
+        width: 33%;      
     }
         
-       /* .main-header {
-            margin-bottom: 150px;
-        }
-        .main-header h2 {
-            margin: 20px auto;
-            float: left;
-        }
-        .navigation {
-            padding-bottom: 150px;
-        }
-        .main-header li {
-            display: inline-block;
-            margin-left: 20px;
-            margin-right: 20px;
-            padding: 15px;
-        }
-        .figures {
-            margin: 20px auto;
-            width: 50%;
-            float: left;
-        }
-        .header-info div {
-            width: 50%;
-            float: right;
-        }
-        .header-info div p {
-            font-size: 2em;
-            text-align: left;
-        }
-        .main-footer-mobile {
-            display: none;
-        }
-        .main-footer-desktop {
-            display: block;
-        }*/
+     
     }
