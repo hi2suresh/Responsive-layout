@@ -1,11 +1,17 @@
-    /********************* Global Layout ***********************/
+
+/*
+  ========================================
+  Global Layout Settings
+  ========================================
+*/
+
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;    
 }
 
 /*
@@ -14,11 +20,20 @@ li:hover {
 }
 */
 
-/*********************Navigation Layout ***********************/
+/*
+  ========================================
+  Settings for Mobile
+  ========================================
+*/
+
+/******************************* 
+Navigational and Header Settings 
+********************************/
 
 .main-header,
 .main-footer-mobile,
-.main-footer-desktop {
+.main-footer-desktop
+ {
     background: lightgray;
 }
 
@@ -50,12 +65,6 @@ li:hover {
 }
 
 
-/*
-.header-info {
-    margin: 20px auto;
-}
-*/
-
 .header-info img {
     width: 65%;
     margin-top: 20px;
@@ -78,10 +87,9 @@ li:hover {
     font-size: 1.5em;
 }
 
-
-/*********************Portfolio Layout ***********************/
-
-
+/**************************** 
+Portfolio Layout for Mobile 
+*****************************/
 #portfolio h2,
 #portfolio div,
 #portfolio p {
@@ -111,39 +119,56 @@ li:hover {
     font-weight: bold;
 }
 
+/**************************** 
+Contact Layout  
+*****************************/
 #contact {
     background: #ffd699;
     width: 100%;
+    
 }
 
-#contact h2 {
-    /*    margin: 80px 30px 60px 30px;*/
+#contact h2 { 
     padding: 30px;
 }
 
-#contact p {
-    /*    margin: 60px 30px;*/
+#contact p { 
     padding: 15px;
 }
 
-.clear-fix {
-    clear: both;
-    display: table;
-    content: "";
-}
+
+
+/**************************** 
+Footer Layout for mobile
+*****************************/
 
 .main-footer-desktop {
-    display: none;
+    display: none;   /** Make desktop footer disappear for mobile devices **/
 }
 
-.main-footer-mobile {
-    width: 100%;   
-    padding: 20px 10px 40px 10px;
+.main-footer-mobile{
+   width: 100%;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   background: lightgray;
+   border-top: 1px solid gray;
+  
+}
+.main-footer-mobile div{
+   width: 50%;
+   float: left;
 }
 
 .main-footer-mobile h2 {
-    float: left;
-    font-size: 1em;
+    float: left;    
+    text-align: left;
+    font-size: 0.7em;
+    padding-left: 15px;
+}
+
+.main-footer-mobile a{
+    padding-right: 15px;
+    font-size: 0.7em;
 }
 
 .main-footer-mobile a,
@@ -153,8 +178,24 @@ li:hover {
     float: right;
 }
 
+/**************************** 
+Clear float   
+*****************************/
+.clear-fix {
+    clear: both;
+    display: table;
+    content: "";
+}
 
-/****************Tablet settings***************************/
+/*
+  ========================================
+  Settings for Tablet
+  ========================================
+*/
+
+/******************************* 
+Navigational and Header Settings 
+********************************/
 
 @media (min-width: 760px) {
     .main-header {
@@ -183,6 +224,10 @@ li:hover {
     .header-info img {
         width: 85%;
     }
+    
+/**************************** 
+Portfolio Layout for Tablet 
+*****************************/
      
     .figures {
         margin: 20px auto;
@@ -196,7 +241,10 @@ li:hover {
     .header-info div p {  
         text-align: left;
     }
-    
+
+/**************************** 
+Contact Layout for Tablet 
+*****************************/
     #contact p {
     margin: 20px auto;
     padding-top: 0;
@@ -205,21 +253,30 @@ li:hover {
     padding-right: 20%;
     text-align: center;
 }
-  
+
+/**************************** 
+Footer Layout for Tablet 
+*****************************/
+/****** Make desktop footer visible 
+******* and mobile footer disappear***/
+    
     .main-footer-mobile {
         display: none;
-    }
+    }   
     
-    
-    /****** Make desktop footer visible *************/
+  
      .main-footer-desktop{
          display: block;
          font-size: 0.7em;
+         background: darkgray;
     }
     
+
     .footer-container div {
         width: 50%;
         float: left;
+        padding-top: 15px;
+        padding-bottom: 40px;
     }
     
     .footer-heading h2{
@@ -237,42 +294,18 @@ li:hover {
         .footer-navigation a{
             text-align: right;
             text-transform: uppercase;
-            padding-right: 15px;         
+            padding-right: 15px;
            
-        }
-      
-/*
-    .main-footer-desktop{      
-        display: block;
-        margin: 20px auto;
-        font-size: 0.8em;
-    }
-    
+        }  
 
-    .footer-heading,
-    .footer-navigation {
-        width: 50%;
-        float: left;        
-    }
-    
-    .footer-heading h2{
-        text-align: left;
-        padding-left: 20px;        
-    }
-
-    .footer-navigation li {
-        display: inline-block;       
-        list-style-type: none;
-        padding-left: 30px;
-        font-weight: bold;
-    }
-*/
-
-   
 }
 
-
-    /****************Desktop with mininum width of 1024 pixels***************************/
+/*
+  ========================================
+  Settings for Desktop
+  ========================================
+*/
+   
     @media (min-width: 1024px) {
         
       /*Settings for top section of the page */
