@@ -62,6 +62,9 @@ Navigational and Header Settings
     margin-bottom: 5px;
 }
 
+ a:hover {
+    border: 1px solid blue;
+}
 
 .header-info img {
     width: 55%;
@@ -143,6 +146,17 @@ Contact Layout
 }
 
 
+/**************************** 
+Contact Layout  
+*****************************/
+#skills, #skills li {
+    margin: 20px auto;
+}
+
+#skills li {
+    color: brown;   
+    list-style: none;    
+}
 /**************************** 
 Footer Layout for mobile
 *****************************/
