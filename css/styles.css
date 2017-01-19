@@ -126,7 +126,7 @@ Contact Layout
 *****************************/
 
 #contact {   
-/*    width: 100%;*/
+    width: 100%;
     background: #ffe0cc 
 }
 
@@ -204,15 +204,17 @@ Clear float
 Navigational and Header Settings 
 ********************************/
 
-@media (min-width: 760px) {
+@media (min-width: 768px) {
     .main-header {
         margin-bottom: 40px;
     }
     
+/*
     .navigation ul{      
         width: 100%;
     }
     
+*/
     .navigation li,
     .navigation a {
         background: lightgray;
@@ -223,6 +225,15 @@ Navigational and Header Settings
         display: inline-block;
         padding-left: 20px;
     }
+    
+      .header-info div {
+        width: 50%;
+        float: right;
+    }
+    
+    .header-info div p {  
+        text-align: left;
+    }
 
     .header-info p {
         padding-top: 10px;
@@ -230,24 +241,32 @@ Navigational and Header Settings
     
     .header-info img {
         width: 85%;
+        padding-right: 25px;
     }
     
 /**************************** 
 Portfolio Layout for Tablet 
 *****************************/
      
+    #portfolio {
+        width: 90%;
+        margin: 0 auto 20px auto;
+    }
+    
+    .figures img,
+    .figures p {
+      width: 100%;
+      margin: 0 auto;
+      padding: 10px 20px 10px 0px;
+        
+    }
+    
     .figures {
-        margin: 20px auto;
+        margin: 10px auto;
         width: 50%;
         float: left;
     }
-    .header-info div {
-        width: 50%;
-        float: right;
-    }
-    .header-info div p {  
-        text-align: left;
-    }
+  
 
 /**************************** 
 Contact Layout for Tablet 
@@ -341,6 +360,7 @@ Footer Layout for Tablet
         }
         
         .container-navigation li {
+/*            float: right;*/
             display: inline;            
             padding: 0;
         }
@@ -349,7 +369,7 @@ Footer Layout for Tablet
         .container-navigation l, 
         .container-navigation a{
             text-align: right;
-            padding-right: 30px;
+            padding-right: 15px;
             font-size: 1em;
             font-weight: bold;
         }
@@ -364,21 +384,13 @@ Footer Layout for Tablet
             font-size: 1.1em;
             font-family: 'Nunito', sans-serif;         
         }
-        
         .header-info img {
-    width: 85%;
-           
-/*
-    margin-top: 20px;
-    margin-bottom: 25px;
-*/
-}
+            width: 85%;
+        }
+        /*Settings for Portfolio section of the page */
         
-         /*Settings for Portfolio section of the page */
-        
-        .figures {      
-        width: 33%;      
-    }
-        
+        .figures {
+            width: 33%;
+        }   
      
     }
