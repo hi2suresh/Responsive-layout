@@ -270,7 +270,7 @@ Portfolio Layout for Tablet
     .figures img,
     .figures p {
       width: 100%;
-      margin: 0 auto;
+/*      margin: 0 auto;*/
 /*      padding: 10px 20px 10px 0px;*/
         
     }
@@ -281,6 +281,10 @@ Portfolio Layout for Tablet
         float: left;
     }
   
+    .figures p {
+        padding: 0;
+        width: 80%;
+    }
 
 /**************************** 
 Contact Layout for Tablet 
