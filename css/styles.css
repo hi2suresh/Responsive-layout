@@ -8,7 +8,7 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     text-align: center;
     font-family: 'Open Sans', sans-serif;    
@@ -48,45 +48,47 @@ Navigational and Header Settings
     list-style-type: none;
     text-transform: uppercase;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     width: 80%
 }
 
 .navigation li,
 .navigation a {
     background: white;
-    margin: 8px auto;
 }
 
 .navigation li {
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 
 .header-info img {
-    width: 65%;
+    width: 55%;
     margin-top: 20px;
     margin-bottom: 25px;
 }
 
 .header-info p {
-    width: 80%;
-    margin: 0 auto;
+    width: 85%;   
     padding-bottom: 20px;
     font-family: 'Lato', Georgia,  Helvetica, Verdana, Arial, sans-serif;
     font-size: 1.2em;
 }
 
+/****************************************** 
+Remove the default text decoration settings 
+********************************************/
 .navigation a,
 .footer-navigation{
     text-decoration: none;
-    color: black;
+    color: black;    
+}
+
+.navigation a {  
     font-weight: 500;
     font-size: 1.5em;
 }
-
 /**************************** 
 Portfolio Layout for Mobile 
 *****************************/
@@ -124,18 +126,21 @@ Contact Layout
 *****************************/
 
 #contact {   
-    width: 100%;
+/*    width: 100%;*/
     background: #ffe0cc 
 }
 
 #contact h2 { 
-    padding: 30px;
+    padding-top: 50px;
 }
 
 #contact p { 
     padding: 15px;
 }
 
+#contact p:nth-child(4) { 
+    padding: 15px 15px 40px 15px;
+}
 
 
 /**************************** 
@@ -149,21 +154,14 @@ Footer Layout for mobile
 #control-footer-background-color {
      background: lightgray;
 }
-.main-footer-mobile{
-   width: 98%;
-/*
-   margin-left: auto;
-   margin-right: auto;
-*/
-   padding-top: 10px;
-   padding-bottom: 10px;
-   border-top: 1px solid darkgray;
-/*
-   background: lightgray;
-   border-top: 1px solid gray;
-*/
-  
+
+.main-footer-mobile {
+    width: 90%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 1px solid darkgray;
 }
+
 .main-footer-mobile div{
    width: 50%;
    float: left;
@@ -173,7 +171,6 @@ Footer Layout for mobile
     float: left;    
     text-align: left;
     font-size: 0.7em;
-    padding-left: 7px;
 }
 
 .main-footer-mobile a{
@@ -323,6 +320,12 @@ Footer Layout for Tablet
 */
    
     @media (min-width: 1024px) {
+        header,
+        main,
+        footer {
+            max-width: 1200px;
+        }
+        
         
       /*Settings for top section of the page */
         
@@ -361,6 +364,15 @@ Footer Layout for Tablet
             font-size: 1.1em;
             font-family: 'Nunito', sans-serif;         
         }
+        
+        .header-info img {
+    width: 85%;
+           
+/*
+    margin-top: 20px;
+    margin-bottom: 25px;
+*/
+}
         
          /*Settings for Portfolio section of the page */
         
