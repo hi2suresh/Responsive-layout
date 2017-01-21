@@ -63,7 +63,7 @@ Navigational and Header Settings
 }
 
  a:hover {
-    border: 1px solid blue;
+    cursor: pointer;
 }
 
 .header-info img {
@@ -154,8 +154,13 @@ Contact Layout
 }
 
 #skills li {
-    color: brown;   
+    color: green;   
     list-style: none;    
+}
+
+#skills li:hover {
+/*   text-decoration: underline;*/
+   font-size: 1.2em;
 }
 /**************************** 
 Footer Layout for mobile
